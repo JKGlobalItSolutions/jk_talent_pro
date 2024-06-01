@@ -953,3 +953,152 @@ link:focus,
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+/* whatsapp button and call button start  */
+    .modal-backdrop.show {
+        display: none;
+    }
+ 
+    .call-buton .cc-calto-action-ripple {
+            z-index: 99999;
+            position: fixed;
+            right: 15px;
+            bottom: 8rem;
+            background: #03bb50;
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+            border-radius: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #ffffff;
+            -webkit-animation: cc-calto-action-ripple 0.6s linear infinite;
+            animation: cc-calto-action-ripple 0.6s linear infinite;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-decoration: none; }
+            .call-buton .cc-calto-action-ripple i {
+              -webkit-transition: 0.3s ease;
+              transition: 0.3s ease;
+              font-size: 2.2rem; }
+            .call-buton .cc-calto-action-ripple:hover i {
+              -webkit-transform: rotate(135deg);
+              transform: rotate(135deg); }
+  
+          /* Custom styles */
+          .whatsapp-button .cc-calto-action-ripple {
+            z-index: 99999;
+            position: fixed;
+            left: 15px;
+            bottom: 8rem;
+            background: #03bb50;
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+            border-radius: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #ffffff;
+            -webkit-animation: cc-calto-action-ripple 0.6s linear infinite;
+            animation: cc-calto-action-ripple 0.6s linear infinite;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-decoration: none; }
+            .whatsapp-button .cc-calto-action-ripple i {
+              -webkit-transition: 0.3s ease;
+              transition: 0.3s ease;
+              font-size: 2.2rem; }
+            .whatsapp-button .cc-calto-action-ripple:hover i {
+              -webkit-transform: rotate(135deg);
+              transform: rotate(135deg); }
+
+ /* whatsapp button and call button end  */
+
+ /* chatbot start */
+
+ #move{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 0 ;
+  margin-right: 100px;
+ }
+.chat-container {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  margin: 10px 0;
+}
+
+.user-message {
+  text-align: right;
+  color: #007bff;
+}
+
+.bot-message {
+  text-align: left;
+  color: #333;
+}
+/*  chat bot end  */
