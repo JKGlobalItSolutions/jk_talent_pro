@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
 	================================================== -->
   <meta charset="utf-8">
-  <title>JK Talent Pro</title>
+  <title> JK Talent Pro </title>
 
   <!-- Mobile Specific Metas
 	================================================== -->
@@ -22,6 +22,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Educenter HTML Template v1.0">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="educenter" />
 
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
@@ -42,17 +45,20 @@
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("QsB1ElyHjvMYFgf_k");
-    })();
-  </script>
+  <link rel="icon" href="images/lo" type="image/x-icon">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function(){
+     emailjs.init("QsB1ElyHjvMYFgf_k");
+  })();
+</script>
+
+
 </head>
 
 <body>
@@ -61,15 +67,58 @@
     <img src="images/preloader1.gif" alt="preloader">
   </div>
   <!-- preloader end -->
+  <!-- Contact Form Modal -->
+  <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactFormModalLabel">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="school">School/College Name/company</label>
+                        <input type="text" class="form-control" id="school" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"  required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+
+
+
 
 <!-- header -->
-<header class="fixed-top header">
+<header class="fixed-top header ">
   <!-- top header -->
   <!-- navbar -->
-  <div class="navigation w-100">
+  <div class="navigation w-100" >
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <a class="navbar-brand" href="index.html"><img src="images/JK TAlent Pro 2.png" width="300px" alt="Jk Talent Pro"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/JK TAlent Pro 2.png" width="300px" alt="JK Talent Pro"></a>
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -81,7 +130,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item @@courses">
-              <a class="nav-link" href="courses.html">our programs</a>
+              <a class="nav-link" href="courses.html">Our Programs</a>
             </li>
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,7 +165,7 @@
                     <li><a class="dropdown-item" href="pages/Competitive Exams/BANK_couching.html">BANK</a></li>
                     <li><a class="dropdown-item" href="pages/Competitive Exams/RAILWAYS_couchiung.html">RAILWAYS</a></li>
                     <li><a class="dropdown-item" href="pages/Competitive Exams/POLICE_couching.html">POLICE</a></li>
-                    <li><a class="dropdown-item" href="pages/Competitive Exams/ARMY,NAVY,AIRFORCE.html">AEMY,NAVY,AIRFORCE</a></li>
+                    <li><a class="dropdown-item" href="pages/Competitive Exams/ARMY,NAVY,AIRFORCE.html">ARMY,NAVY,AIRFORCE</a></li>
                   </ul>
                 </li>
                 <li><a class="dropdown-item" href="pages/Computer_and_IT_Tranining.html">Computer and IT Tranining</a></li>
@@ -130,6 +179,16 @@
                 <li><a class="dropdown-item" href="pages/Industrial_Visit_Planning_Program.html">Industrial visit Planning Program </a></li>  -->
               </ul>
 
+              </li>
+              <li class="nav-item dropdown view">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Corporate
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  <li><a class="dropdown-item" href="./company.html">Our Company/corporate services</a></li>
+                  
+                </ul>
               </li>
             <li class="nav-item @@about">
               <a class="nav-link" href="about.html">About</a>
@@ -145,6 +204,9 @@
 </header>
 <!-- /header -->
 <!-- Modal -->
+
+ 
+
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
@@ -158,16 +220,16 @@
                 <div class="login">
                     <form action="#" class="row">
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone" required>
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
                         </div>
                         <div class="col-12">
-                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name" required>
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
                         </div>
                         <div class="col-12">
-                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email" required>
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
                         </div>
                         <div class="col-12">
-                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password" required>
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">SIGN UP</button>
@@ -208,54 +270,93 @@
     </div>
 </div>
 
-<!-- page title -->
-<section class="page-title-section overlay" data-background="#">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb mb-2">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="index.html">Home</a></li>
-          <li class="list-inline-item text-dark h3 font-secondary nasted">Contact Us</li>
-        </ul>
-        <p class="text-dark mb-0">Thank you for your interest in our courses. If you have any questions, feedback, or would like to learn more about how our courses offer a good compromise between the continuous assessment favored by some universities and the emphasis placed on final exams by others, please don't hesitate to reach out to us.</p>
-      </div>
-    </div>
+<!-- hero slider -->
+<div class="container">
+<section class="hero-section overlay bg-cover "  >
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col mt-2">
+          <div class="card rounded-3" style="background: linear-gradient(to right, #0c0014, #340e36); color: white;">
+            <div class="card-body">
+              <h3 class="card-title text-white">Corporate Training</h3>
+              <ul class="text-white">
+                <li>Catalogue of 100+ Behavioral & Functional Skills</li>
+                <li>Platform for delightful experience</li>
+                <li>Content & Modality Customization</li>
+                <li>Impact Measurement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2">
+          <div class="card" style="  
+          background: radial-gradient(circle at center, #00040f 0%, #000e38
+          
+          100%);">
+            <div class="card-body">
+              <h3 class="card-title text-white">Corporate Coaching</h3>
+              <ul class="text-white">
+                <li>Individual & Team Coaching</li>
+                <li>Largest Pool of Coaches</li>
+                <li>Platform for Coaching Management</li>
+                <li>End-to-End Program Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2">
+          <div class="card" style="background: linear-gradient(to right, #0c0014, #340e36); color: white;">
+            <div class="card-body">
+              <h3 class="card-title text-white">Leadership Programs</h3>
+              <ul class="text-white">
+                <li>Custom 3 to 12-month Leadership Development Programs</li>
+                <li>Hi-Pot talent</li>
+                <li>For Second in-line Leaders</li>
+                <li>Women Leaders</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-2">
+          <div class="card" style="background: linear-gradient(to right, #0c0014, #340e36); color: white;">
+            <div class="card-body">
+              <h3 class="card-title text-white">Coaching Culture</h3>
+              <ul class="text-white">
+                <li>Coach Training for building full-fledged Internal Coaches</li>
+                <li>Coaching Skills programs for leaders across rungs</li>
+                <li>Foster a collaborative environment focused on growth and development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <div class="border shadow " style="max-width: 100%;">
+        <h5 class="p-3 col-lg-4  rounded-pill m-4 text-white" style="background-color: #0c0014;">For Senior Professionals & CXOs</h5>
+        <div class="row p-4">
+          <div class="col-md-6">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>    
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
   </div>
 </section>
-<!-- /page title -->
+  
+  </div>
 
-<!-- contact -->
-<section class="section bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="section-title">Contact Us</h2>
-        <p>Thank you for visiting our website! We value your feedback and inquiries. Please feel free to reach out to us using the following contact details:</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form>
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name" required>
-          <input type="email" class="form-control mb-3" id="email" name="mail" placeholder="Your Email" required>
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" required>
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message" required></textarea>
-          <button type="button" onclick="sendemail()" class="btn btn-primary">SEND MESSAGE</button>
-        </form>
-      </div>
-      <div class="mt-4 col-lg-5">
-        <p class="mb-5">We aim to respond to all inquiries within  24-48 hours. Your satisfaction is our priority!</p>
-        <h4>phone:</h4>
-        <a href="tel:+8802057843248" class="text-color h5 d-block">+91 84384 38413</a>
-        <h4>Email:</h4>
-        <a href="mailto:yourmail@email.com" class="mb-3 text-color h5 d-block">contact@jktalentpro.com</a>
-        <h4>Address:</h4>
-        <p>Annai, Parvathi Nagar, opp. to Collector Office, Vengikkal, Tiruvannamalai, Tamil Nadu 606604</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /contact -->
+
+
+  
+<!-- /hero slider -->
+
+
+<!-- /success story -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 <!-- footer -->
 <footer>
@@ -265,7 +366,7 @@
       <div class="row">
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
-          <a class="navbar-brand" href="index.html"><img src="images/JK TAlent Pro 2.png" width="300px" alt="Jk Talent Pro"></a>
+          <a class="navbar-brand" href="index.html"><img src="images/JK TAlent Pro 2.png" width="300px" alt="JK Talent Pro"></a>
           <ul class="list-unstyled">
             <li class="mb-2">phone: +91 84384 38413 </li>
             <!-- <li class="mb-3">Annai, Parvathi Nagar, opp. to Collector Office, Vengikkal, Tiruvannamalai, Tamil Nadu 606604</li> -->
@@ -315,7 +416,7 @@
         </div>
         <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-facebook text-white"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-facebook text-white"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-twitter-alt text-white"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-github text-white"></i></a></li>
             <li class="list-inline-item"><a class="d-inline-block p-2" href=""><i class="ti-instagram text-white"></i></a></li>
@@ -326,6 +427,10 @@
   </div>
 </footer>
 <!-- /footer -->
+<!-- pop up start -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
@@ -346,28 +451,7 @@
 <!-- Main Script -->
 <script src="js/script.js"></script>
 
-<script>
-  function sendemail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
 
-    var templateParams = {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message,
-    };
-
-    emailjs
-      .send("service_1tkic9c", "template_mnm4u2b", templateParams)
-      .then(function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        window.alert("Sent successfully!");
-      });
-  }
-</script>
 
 </body>
 </html>

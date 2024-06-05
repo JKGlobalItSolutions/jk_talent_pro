@@ -503,6 +503,7 @@ textarea.form-control {
 .nav-item {
   margin: 0 15px;
   position: relative;
+  font-size: small;
 }
 @media (max-width: 991px) {
   .nav-item:last-child {
@@ -582,10 +583,13 @@ link:focus,
 }
 .navbar .dropdown .dropdown-menu li {
   padding-top: 10px;
+  
 }
 .navbar .dropdown .dropdown-menu li:last-child {
   padding-bottom: 15px;
+
 }
+
 .navbar .dropdown .dropdown-menu.dropdown-submenu {
   top: 0;
 }
